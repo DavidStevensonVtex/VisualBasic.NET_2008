@@ -29,5 +29,13 @@ Module Program
 		' A more elegan mannager in which to skip over select optional arguments is using named arguments.
 		PrintFormattedMessage("Call Four", textColor:=ConsoleColor.Gray)
 
+
+		' ParamArray data can be setnt as a cller-supplied Array
+		' or a comma-delimited list of arguments.
+		Console.WriteLine(CalculateAverage(10, 11, 12, 44))
+		Console.WriteLine(CalculateAverage(1, 2))
+
+		Dim data() As Integer = {22, 33, 44, 55}
+		Console.WriteLine(CalculateAverage(data))
 	End Sub
 End Module

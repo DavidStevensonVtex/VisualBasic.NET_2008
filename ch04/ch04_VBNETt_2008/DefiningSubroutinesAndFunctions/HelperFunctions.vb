@@ -36,4 +36,13 @@
 		' Reset current console foreground color
 		Console.ForegroundColor = foreGroundColor
 	End Sub
+
+	Function CalculateAverage(ByVal ParamArray itemsToAvg() As Integer) As Double
+		Dim itemCount As Integer = itemsToAvg.Count
+		Dim result As Integer = 0
+		For Each item As Integer In itemsToAvg
+			result = result + item
+		Next
+		Return Convert.ToDouble(result) / itemCount
+	End Function
 End Module
