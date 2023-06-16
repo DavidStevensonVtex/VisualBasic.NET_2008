@@ -7,6 +7,8 @@
 	' Functions have a return value.
 	Function Add(ByVal x As Integer, ByVal y As Integer) As Integer
 		'Add = x + y
+		' Try to set the params to a new value for the caller.
+		x = 22 : y = 30
 		Return x + y
 	End Function
 
