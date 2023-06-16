@@ -16,5 +16,18 @@ Module Program
 		' wrapping the parameter within an extra set of parentheses.
 		PrintMessage((msg))
 		Console.WriteLine("After call msg = {0}", msg)
+
+		' Accept all defaults for the optional args.
+		PrintFormattedMessage("Call One")
+
+		' Provide an optional argument.
+		PrintFormattedMessage("Call Two", True, 5, ConsoleColor.Yellow)
+
+		' Print this message in current case, one time, in gray.
+		PrintFormattedMessage("Call Three", , , ConsoleColor.Gray)
+
+		' A more elegan mannager in which to skip over select optional arguments is using named arguments.
+		PrintFormattedMessage("Call Four", textColor:=ConsoleColor.Gray)
+
 	End Sub
 End Module

@@ -21,4 +21,19 @@
 	End Function
 	'Error BC30210	Option Strict On requires all Function, Property, And Operator declarations To have an 'As' clause.	
 
+	Sub PrintFormattedMessage(ByVal msg As String,
+		Optional ByVal upperCase As Boolean = False,
+		Optional ByVal timesToRepeat As Integer = 0,
+		Optional ByVal textColor As ConsoleColor = ConsoleColor.Green)
+		' Store current console foreground color.
+		Dim foreGroundColor As ConsoleColor = Console.ForegroundColor
+		' Set console foreground color.
+		Console.ForegroundColor = textColor
+		' Print message in correct case x number of times
+		For i As Integer = 0 To timesToRepeat
+			Console.WriteLine(msg)
+		Next
+		' Reset current console foreground color
+		Console.ForegroundColor = foreGroundColor
+	End Sub
 End Module
