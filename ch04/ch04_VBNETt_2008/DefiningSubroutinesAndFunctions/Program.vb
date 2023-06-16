@@ -6,7 +6,7 @@ Module Program
 		' Pass two integers by value.
 		Dim x, y As Integer
 		x = 10 : y = 20
-		Console.WriteLine("{0} + {1} = {2}", x, y, Add(x, y))
+		Console.WriteLine("{0} + {1} = {2}", x, y, HelperFunctions.Add(x, y))
 
 		' x is still 10 and y is still 20.
 		Console.WriteLine("After call x = {0} and y = {1}", x, y)
@@ -41,5 +41,14 @@ Module Program
 		For i As Integer = 0 To 10
 			PrintLocalCounter()
 		Next
+
+		Console.WriteLine()
+		Console.WriteLine("***** Fun with Method Overloading *******")
+		' Calls Integer version of Add
+		Console.WriteLine(MathUtils.Add(10, 10))
+		' Calls Long version of Add
+		Console.WriteLine(MathUtils.Add(90000000000000, 90000000000000))
+		' Calls Double version of Add
+		Console.WriteLine(MathUtils.Add(4.3, 4.4))
 	End Sub
 End Module
