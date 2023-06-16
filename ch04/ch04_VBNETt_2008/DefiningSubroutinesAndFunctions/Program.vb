@@ -12,7 +12,9 @@ Module Program
 		Console.WriteLine("After call x = {0} and y = {1}", x, y)
 
 		Dim msg As String = "Hello from Main!"
-		PrintMessage(msg)
+		' You can force the runtime to pass in a copy of the data by
+		' wrapping the parameter within an extra set of parentheses.
+		PrintMessage((msg))
 		Console.WriteLine("After call msg = {0}", msg)
 	End Sub
 End Module
