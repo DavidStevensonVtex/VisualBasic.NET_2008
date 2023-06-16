@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DefiningSubroutinesAndFunct
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.vbproj", "{EFAF20DE-6165-4CE3-B3CD-A6E3BA569716}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SystemArrayClass", "SystemArrayClass\SystemArrayClass.vbproj", "{DBFF306D-79A1-44EB-8097-374AB58B743A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EFAF20DE-6165-4CE3-B3CD-A6E3BA569716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAF20DE-6165-4CE3-B3CD-A6E3BA569716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFAF20DE-6165-4CE3-B3CD-A6E3BA569716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFF306D-79A1-44EB-8097-374AB58B743A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFF306D-79A1-44EB-8097-374AB58B743A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFF306D-79A1-44EB-8097-374AB58B743A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFF306D-79A1-44EB-8097-374AB58B743A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
