@@ -1,7 +1,10 @@
 ﻿Module HelperFunctions
 	' Subroutines have no return value.
-	Sub PrintMessage(ByVal msg As String)
-		Console.WriteLine(msg)
+	Sub PrintMessage(ByRef msg As String)
+		Console.WriteLine("Your message is: " & msg)
+
+		' Caller will see this change, as "msg" is passed ByRef
+		msg = "Thank you for calling this method"
 	End Sub
 
 	' Functions have a return value.

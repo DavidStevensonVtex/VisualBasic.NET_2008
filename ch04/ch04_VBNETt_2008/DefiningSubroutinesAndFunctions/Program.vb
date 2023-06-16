@@ -10,5 +10,9 @@ Module Program
 
 		' x is still 10 and y is still 20.
 		Console.WriteLine("After call x = {0} and y = {1}", x, y)
+
+		Dim msg As String = "Hello from Main!"
+		PrintMessage(msg)
+		Console.WriteLine("After call msg = {0}", msg)
 	End Sub
 End Module
