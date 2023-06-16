@@ -45,4 +45,12 @@
 		Next
 		Return Convert.ToDouble(result) / itemCount
 	End Function
+
+	Sub PrintLocalCounter()
+		' Note the Static keyword
+		Static Dim localCounter As Integer
+
+		localCounter += 1
+		Console.Write("{0} ", localCounter)
+	End Sub
 End Module

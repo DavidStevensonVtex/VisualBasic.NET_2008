@@ -37,5 +37,9 @@ Module Program
 
 		Dim data() As Integer = {22, 33, 44, 55}
 		Console.WriteLine(CalculateAverage(data))
+
+		For i As Integer = 0 To 10
+			PrintLocalCounter()
+		Next
 	End Sub
 End Module
