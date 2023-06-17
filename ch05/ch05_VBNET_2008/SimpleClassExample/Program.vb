@@ -21,5 +21,11 @@ Module Program
 		Dim chuck As New Car
 		' Prints "Chuck is going 10 MPH.
 		chuck.PrintState()
+
+		Dim mary As New Car("Mary")
+		mary.PrintState()
+
+		Dim daisy As New Car("Daisy", 75)
+		daisy.PrintState()
 	End Sub
 End Module
