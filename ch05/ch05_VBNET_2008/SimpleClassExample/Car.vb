@@ -3,6 +3,12 @@
 	Public petName As String
 	Public currSpeed As Integer
 
+	' A custom default constructor
+	Public Sub New()
+		petName = "Chuck"
+		currSpeed = 10
+	End Sub
+
 	' The functionality of the Car.
 	Public Sub PrintState()
 		Console.WriteLine("{0} is going {1} MPH.", petName, currSpeed)

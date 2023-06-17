@@ -15,5 +15,11 @@ Module Program
 			myCar.SpeedUp(5)
 			myCar.PrintState()
 		Next
+
+		' Invoking the default constructor
+		' The compiler allows you to omit the empty parentheses when invoking the default constructor.
+		Dim chuck As New Car
+		' Prints "Chuck is going 10 MPH.
+		chuck.PrintState()
 	End Sub
 End Module
