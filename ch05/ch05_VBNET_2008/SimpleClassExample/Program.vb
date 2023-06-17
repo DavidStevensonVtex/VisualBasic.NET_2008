@@ -27,5 +27,9 @@ Module Program
 
 		Dim daisy As New Car("Daisy", 75)
 		daisy.PrintState()
+
+		Dim mc As New Motorcycle
+		mc.PopAWheely()
+
 	End Sub
 End Module
