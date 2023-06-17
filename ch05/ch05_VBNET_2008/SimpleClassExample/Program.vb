@@ -4,7 +4,9 @@ Module Program
 	Sub Main(args As String())
 		Console.WriteLine("***** Fun with Class Types *****")
 		' Allocate and configure a Car object.
-		Dim myCar As New Car()
+		'Dim myCar As New Car()
+		' An alternative manner to allocate an object.
+		Dim myCar As Car = New Car()
 		myCar.petName = "Sven"
 		myCar.currSpeed = 10
 
