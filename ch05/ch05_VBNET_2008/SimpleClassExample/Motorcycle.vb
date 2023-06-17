@@ -1,5 +1,6 @@
 ﻿Public Class Motorcycle
 	Public driverIntensity As Integer
+	Public name As String
 	Public Sub PopAWheely()
 		Console.WriteLine("Yeeeeeee Haaaaaaeewww!")
 	End Sub
@@ -15,4 +16,7 @@
 		driverIntensity = intensity
 	End Sub
 
+	Public Sub SetDriverName(ByVal name As String)
+		Me.name = name
+	End Sub
 End Class
