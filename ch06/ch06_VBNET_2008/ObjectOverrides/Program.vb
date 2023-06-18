@@ -29,5 +29,16 @@ Module Program
 		Console.WriteLine("p1 = p2? {0}", p1.Equals(p2))
 		Console.WriteLine("Same hash codes?: {0}", p1.GetHashCode() = p2.GetHashCode())
 		Console.WriteLine()
+
+		SharedMembersOfObject()
+		Console.WriteLine()
+	End Sub
+
+	Sub SharedMembersOfObject()
+		' Shared members of System.Object
+		Dim p3 As New Person("Sally", "Jones", 4)
+		Dim p4 As New Person("Sally", "Jones", 4)
+		Console.WriteLine("P3 and P4 have same state: {0}", Object.Equals(p3, p4))
+		Console.WriteLine("P3 and P4 are pointing to same object: {0}", Object.ReferenceEquals(p3, p4))
 	End Sub
 End Module
