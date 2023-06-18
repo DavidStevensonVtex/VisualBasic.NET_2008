@@ -1,4 +1,4 @@
-﻿Public Class Employee
+﻿Partial Public Class Employee
 	' Field data.
 	Private empName As String
 	Private empAge As Integer
