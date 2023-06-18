@@ -36,5 +36,9 @@ Module Program
 		c.PopAWheely()
 		Console.WriteLine("Rider name is {0}", c.driverName)
 
+		' Call is forwarded to Radio interally.
+		Dim viper As New Car()
+		viper.TurnOnRadio(False)
+
 	End Sub
 End Module

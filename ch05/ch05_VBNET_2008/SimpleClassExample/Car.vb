@@ -3,6 +3,14 @@
 	Public petName As String
 	Public currSpeed As Integer
 
+	' Car "has-a" Radio
+	Private myRadio As New Radio()
+
+	Public Sub TurnOnRadio(ByVal onOff As Boolean)
+		' Delegate call to inner object.
+		myRadio.PowerUp(onOff)
+	End Sub
+
 	' A custom default constructor
 	Public Sub New()
 		petName = "Chuck"
