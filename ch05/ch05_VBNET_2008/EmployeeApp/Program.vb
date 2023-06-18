@@ -7,8 +7,11 @@ Module Program
 		emp.DisplayStats()
 
 		' Use the get / set methods to interact with the object's name.
-		emp.SetName("Marv")
-		Console.WriteLine("Employee is named: {0}", emp.GetName())
+		emp.Name = "Marv"
+		Console.WriteLine("Employee is named: {0}", emp.Name)
 		Console.WriteLine()
+
+		Dim joe As New Employee()
+		joe.Age = joe.Age + 1
 	End Sub
 End Module
