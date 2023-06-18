@@ -3,12 +3,12 @@
 ''' </summary>
 Partial Public Class Employee
 	' Field data.
-	Private empName As String
-	Private empAge As Integer
-	Private empSSN As String
-	Private empID As Integer
-	Private currPay As Single
-	Private Shared companyName As String
+	Protected empName As String
+	Protected empAge As Integer
+	Protected empSSN As String
+	Protected empID As Integer
+	Protected currPay As Single
+	Protected Shared companyName As String
 
 	' Constructors
 	Public Sub New()
