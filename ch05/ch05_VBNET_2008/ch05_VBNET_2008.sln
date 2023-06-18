@@ -11,6 +11,8 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "DefiningSharedData", "Defin
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EmployeeApp", "EmployeeApp\EmployeeApp.vbproj", "{714B8CC9-5F45-4A20-8DE1-8762CE066419}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConstantData", "ConstantData\ConstantData.vbproj", "{A6A30C68-76E9-4E15-8195-BD6552469E3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{714B8CC9-5F45-4A20-8DE1-8762CE066419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{714B8CC9-5F45-4A20-8DE1-8762CE066419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{714B8CC9-5F45-4A20-8DE1-8762CE066419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A30C68-76E9-4E15-8195-BD6552469E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A30C68-76E9-4E15-8195-BD6552469E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A30C68-76E9-4E15-8195-BD6552469E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A30C68-76E9-4E15-8195-BD6552469E3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
