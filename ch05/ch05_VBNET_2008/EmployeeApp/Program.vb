@@ -2,6 +2,7 @@ Imports System
 
 Module Program
 	Sub Main(args As String())
+		Employee.Company = "Intertech Training"
 		Dim emp As New Employee("Marvin", 456, 30000)
 		emp.GiveBonus(1000)
 		emp.DisplayStats()
@@ -13,5 +14,7 @@ Module Program
 
 		Dim joe As New Employee()
 		joe.Age = joe.Age + 1
+
+		Console.WriteLine("These folks work at {0}", Employee.Company)
 	End Sub
 End Module

@@ -5,10 +5,20 @@
 	Private empSSN As String
 	Private empID As Integer
 	Private currPay As Single
+	Private Shared companyName As String
 
 	' Constructors
 	Public Sub New()
 	End Sub
+
+	Public Shared Property Company() As String
+		Get
+			Return companyName
+		End Get
+		Set(value As String)
+			companyName = value
+		End Set
+	End Property
 
 
 	Public Sub New(ByVal name As String, ByVal id As Integer, ByVal pay As Single)
