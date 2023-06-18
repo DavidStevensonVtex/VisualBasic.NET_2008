@@ -1,4 +1,7 @@
-﻿Partial Public Class Employee
+﻿''' <summary>
+''' This is the employee class.
+''' </summary>
+Partial Public Class Employee
 	' Field data.
 	Private empName As String
 	Private empAge As Integer
@@ -27,7 +30,13 @@
 		currPay = pay
 	End Sub
 
-
+	''' <summary>
+	''' This is the constructor for the Employee class.
+	''' </summary>
+	''' <param name="name">Employee Name.</param>
+	''' <param name="age">Employee Age.</param>
+	''' <param name="id">Employee ID.</param>
+	''' <param name="pay">Employee Annual Pay.</param>
 	Public Sub New(ByVal name As String, ByVal age As Integer, ByVal id As Integer, ByVal pay As Single)
 		empName = name
 		empAge = age
