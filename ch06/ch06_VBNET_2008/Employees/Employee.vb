@@ -1,7 +1,7 @@
 ﻿''' <summary>
 ''' This is the employee class.
 ''' </summary>
-Partial Public Class Employee
+Partial Public MustInherit Class Employee
 	Public Class BenefitPackage
 
 		Public Enum BenefitPackageLevel
