@@ -22,5 +22,11 @@ Module Program
 		Next
 
 		Console.WriteLine()
+
+		' Fun with shadowing.
+		Dim o As New ThreeDCircle
+		o.Draw()
+		CType(o, Circle).Draw()
+		Console.WriteLine()
 	End Sub
 End Module
