@@ -17,5 +17,6 @@ Module Program
 		' Error!
 		'fixedStr = "This will not work!"
 		' Error BC30074	Constant cannot be the target Of an assignment.
+
 	End Sub
 End Module
