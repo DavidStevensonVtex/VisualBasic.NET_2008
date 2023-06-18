@@ -123,11 +123,11 @@ Partial Public Class Employee
 		End Set
 	End Property
 
-	' Methods
-	Public Sub GiveBonus(ByVal amount As Single)
+	' This method may now be "overriden" by derived classes.
+	Public Overridable Sub GiveBonus(ByVal amount As Single)
 		currPay += amount
 	End Sub
-	Public Sub DisplayStats()
+	Public Overridable Sub DisplayStats()
 		Console.WriteLine("Name: {0}", empName)
 		Console.WriteLine("Age: {0}", empAge)
 		Console.WriteLine("SSN: {0}", empSSN)

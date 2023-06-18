@@ -15,6 +15,14 @@ Module Program
 		End With
 
 		Dim chucky As New Manager("Chucky", 45, 101, 30000, "222-22-2222", 90)
+		chucky.GiveBonus(300)
+		chucky.DisplayStats()
+		Console.WriteLine()
+
+		Dim fran As New SalesPerson("Fran", 43, 93, 3000, "932-32-3232", 31)
+		fran.GiveBonus(200)
+		fran.DisplayStats()
+		Console.WriteLine()
 
 		' Create and use the public inner class. OK!
 		Dim inner As New OuterClass.PublicInnerClass
