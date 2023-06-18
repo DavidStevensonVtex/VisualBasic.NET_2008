@@ -32,10 +32,9 @@ Module Program
 		mc.PopAWheely()
 
 		' Make a Motorcycle named Tiny?
-		Dim c As New Motorcycle(5)
-		c.SetDriverName("Tiny")
+		Dim c As New Motorcycle(5, "Tiny")
 		c.PopAWheely()
-		Console.WriteLine("Rider name is {0}", c.name)      ' prints an empty name value!
+		Console.WriteLine("Rider name is {0}", c.driverName)
 
 	End Sub
 End Module

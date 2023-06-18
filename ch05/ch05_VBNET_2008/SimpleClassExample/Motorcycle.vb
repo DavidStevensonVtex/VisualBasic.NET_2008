@@ -1,6 +1,6 @@
 ﻿Public Class Motorcycle
 	Public driverIntensity As Integer
-	Public name As String
+	Public driverName As String
 	Public Sub PopAWheely()
 		Console.WriteLine("Yeeeeeee Haaaaaaeewww!")
 	End Sub
@@ -13,10 +13,18 @@
 
 	' Our custom constructor
 	Public Sub New(ByVal intensity As Integer)
-		driverIntensity = intensity
+		Me.New(intensity, "")
 	End Sub
 
-	Public Sub SetDriverName(ByVal name As String)
-		Me.name = name
+	Public Sub New(ByVal name As String)
+		Me.New(5, name)
+	End Sub
+
+	Public Sub New(ByVal intensity As Integer, ByVal name As String)
+		If intensity > 10 Then
+			intensity = 10
+		End If
+		driverIntensity = intensity
+		driverName = name
 	End Sub
 End Class
