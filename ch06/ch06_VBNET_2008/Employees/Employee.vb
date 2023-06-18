@@ -9,6 +9,22 @@ Partial Public Class Employee
 	Protected empID As Integer
 	Protected currPay As Single
 	Protected Shared companyName As String
+	Protected empBenefits As New BenefitPackage
+
+	' Expose certain benefit bheaviors of object.
+	Public Function GetBenefitCost() As Double
+		Return empBenefits.ComputePayDeduction()
+	End Function
+
+	' Expose object through a custom property
+	Public Property Benefits As BenefitPackage
+		Get
+			Return empBenefits
+		End Get
+		Set(value As BenefitPackage)
+			empBenefits = value
+		End Set
+	End Property
 
 	' Constructors
 	Public Sub New()
