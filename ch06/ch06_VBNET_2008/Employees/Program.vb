@@ -15,5 +15,13 @@ Module Program
 		End With
 
 		Dim chucky As New Manager("Chucky", 45, 101, 30000, "222-22-2222", 90)
+
+		' Create and use the public inner class. OK!
+		Dim inner As New OuterClass.PublicInnerClass
+
+		' Compiler error! CAnnot access the private class.
+		'Dim inner2 As New OuterClass.PrivateInnerClass
+		' Error BC30389   'Employees.OuterClass.PrivateInnerClass' is not accessible in this context because it is 'Private'.
+
 	End Sub
 End Module

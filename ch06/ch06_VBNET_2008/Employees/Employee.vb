@@ -2,6 +2,22 @@
 ''' This is the employee class.
 ''' </summary>
 Partial Public Class Employee
+	Public Class BenefitPackage
+
+		Public Enum BenefitPackageLevel
+			Standard
+			Gold
+			Platinum
+		End Enum
+
+		' Assume we have other members that represent
+		' 401K plans, dental/health benefits, and so on.
+
+		Public Function ComputePayDeduction() As Double
+			Return 125.0
+		End Function
+	End Class
+
 	' Field data.
 	Protected empName As String
 	Protected empAge As Integer
