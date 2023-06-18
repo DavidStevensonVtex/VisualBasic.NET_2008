@@ -2,6 +2,7 @@
 	' Field data.
 	Private empName As String
 	Private empAge As Integer
+	Private empSSN As String
 	Private empID As Integer
 	Private currPay As Single
 
@@ -43,6 +44,15 @@
 		End Set
 	End Property
 
+	Public Property SocialSecurityNumber() As String
+		Get
+			Return empSSN
+		End Get
+		Set(value As String)
+			empSSN = value
+		End Set
+	End Property
+
 	Public Property ID() As Integer
 		Get
 			Return empID
@@ -68,6 +78,7 @@
 	Public Sub DisplayStats()
 		Console.WriteLine("Name: {0}", empName)
 		Console.WriteLine("Age: {0}", empAge)
+		Console.WriteLine("SSN: {0}", empSSN)
 		Console.WriteLine("ID: {0}", empID)
 		Console.WriteLine("Pay: {0}", currPay)
 	End Sub
