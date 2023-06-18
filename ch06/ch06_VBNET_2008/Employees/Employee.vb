@@ -135,4 +135,18 @@ Partial Public MustInherit Class Employee
 		Console.WriteLine("Pay: {0}", currPay)
 	End Sub
 
+	Public Sub FireThisPerson(ByVal emp As Employee)
+		If TypeOf emp Is SalesPerson Then
+			Console.WriteLine("Lost a sales person named {0}", emp.Name)
+			Console.WriteLine("{0} made {1} sale(s)...", emp.Name, CType(emp, SalesPerson).SalesNumber)
+			Console.WriteLine()
+		End If
+
+		If TypeOf emp Is Manager Then
+			Console.WriteLine("Lost a suit named {0}", emp.Name)
+			Console.WriteLine("{0} had {1}stock options...", emp.Name, CType(emp, Manager).StockOptions)
+			Console.WriteLine()
+		End If
+	End Sub
+
 End Class
