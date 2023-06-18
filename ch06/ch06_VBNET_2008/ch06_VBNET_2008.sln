@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Employees", "Employees\Empl
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Shapes", "Shapes\Shapes.vbproj", "{E70B0409-6F74-4DF3-BB7B-71E9DD862616}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ObjectOverrides", "ObjectOverrides\ObjectOverrides.vbproj", "{6F9C8499-E50A-42D7-9F91-1AFD3F7AA4DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E70B0409-6F74-4DF3-BB7B-71E9DD862616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E70B0409-6F74-4DF3-BB7B-71E9DD862616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E70B0409-6F74-4DF3-BB7B-71E9DD862616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F9C8499-E50A-42D7-9F91-1AFD3F7AA4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9C8499-E50A-42D7-9F91-1AFD3F7AA4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9C8499-E50A-42D7-9F91-1AFD3F7AA4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9C8499-E50A-42D7-9F91-1AFD3F7AA4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
