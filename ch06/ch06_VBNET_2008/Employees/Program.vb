@@ -13,5 +13,7 @@ Module Program
 			.SalesNumber = 50
 			.Name = "Dan McCabe"
 		End With
+
+		Dim chucky As New Manager("Chucky", 45, 101, 30000, "222-22-2222", 90)
 	End Sub
 End Module

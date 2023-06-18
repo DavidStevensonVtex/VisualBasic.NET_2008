@@ -37,11 +37,12 @@ Partial Public Class Employee
 	''' <param name="age">Employee Age.</param>
 	''' <param name="id">Employee ID.</param>
 	''' <param name="pay">Employee Annual Pay.</param>
-	Public Sub New(ByVal name As String, ByVal age As Integer, ByVal id As Integer, ByVal pay As Single)
+	Public Sub New(ByVal name As String, ByVal age As Integer, ByVal id As Integer, ByVal pay As Single, ByVal ssn As String)
 		empName = name
 		empAge = age
 		empID = id
 		currPay = pay
+		empSSN = ssn
 	End Sub
 
 	' Properties
@@ -63,13 +64,13 @@ Partial Public Class Employee
 		End Set
 	End Property
 
-	Public Property SocialSecurityNumber() As String
+	Public ReadOnly Property SocialSecurityNumber() As String
 		Get
 			Return empSSN
 		End Get
-		Set(value As String)
-			empSSN = value
-		End Set
+		'Set(value As String)
+		'	empSSN = value
+		'End Set
 	End Property
 
 	Public Property ID() As Integer
