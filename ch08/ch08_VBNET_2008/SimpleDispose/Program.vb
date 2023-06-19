@@ -4,8 +4,10 @@ Module Program
 	Sub Main(args As String())
 		Console.WriteLine("***** Fun with Dispose *****")
 		Dim rw As New MyResourceWrapper
-		If (TypeOf rw Is IDisposable) Then
+		Try
+			' Call members of rw.
+		Finally
 			rw.Dispose()
-		End If
+		End Try
 	End Sub
 End Module
