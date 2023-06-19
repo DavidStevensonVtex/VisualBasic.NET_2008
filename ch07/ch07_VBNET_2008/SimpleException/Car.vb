@@ -23,6 +23,10 @@
 
 	' See if the Car has overheated.
 	Public Sub Accelerate(ByVal delta As Integer)
+		If delta < 0 Then
+			Throw New ArgumentOutOfRangeException()
+		End If
+
 		If carIsDead Then
 			Console.WriteLine($"{petName} is out of order...")
 		Else
@@ -40,5 +44,5 @@
 				Console.WriteLine($"=> CurrSpeed = {currSpeed}")
 			End If
 		End If
-    End Sub
+	End Sub
 End Class

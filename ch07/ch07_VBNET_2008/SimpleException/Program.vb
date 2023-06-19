@@ -11,6 +11,10 @@ Module Program
 			For i As Integer = 0 To 10
 				myCar.Accelerate(10)
 			Next
+
+		Catch ex As ArgumentOutOfRangeException
+			' Process bad arguments.
+			Console.WriteLine("Argument Out of Range Exception")
 		Catch ex As CarIsDeadException
 			Console.WriteLine("**** Error! ****")
 			Console.WriteLine($"Method: {ex.TargetSite}")
@@ -28,6 +32,9 @@ Module Program
 					Console.WriteLine($"-> {de.Key} : {de.Value}")
 				Next
 			End If
+		Catch ex As Exception
+			' Process all other exceptions.
+			Console.WriteLine($"{ex.Message}")
 		End Try
 
 		' The error has been handled, processing continues with the next statement.
