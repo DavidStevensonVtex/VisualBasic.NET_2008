@@ -13,6 +13,4 @@
 	Public Overrides Function ToString() As String
 		Return $"{petName} is going {currSpeed} MPH"
 	End Function
-
-
 End Class
