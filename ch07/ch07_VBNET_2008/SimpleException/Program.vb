@@ -14,8 +14,11 @@ Module Program
 		Catch ex As Exception
 			Console.WriteLine("**** Error! ****")
 			Console.WriteLine($"Method: {ex.TargetSite}")
+			Console.WriteLine($"Class defining member: {ex.TargetSite.DeclaringType}")
+			Console.WriteLine($"Member type: {ex.TargetSite.MemberType}")
 			Console.WriteLine($"Message: {ex.Message}")
 			Console.WriteLine($"Source: {ex.Source}")
+			Console.WriteLine($"Stack: {ex.StackTrace}")
 		End Try
 
 		' The error has been handled, processing continues with the next statement.
