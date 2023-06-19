@@ -1,4 +1,5 @@
 Imports System
+Imports System.IO
 
 Module Program
 	Sub Main(args As String())
@@ -32,9 +33,18 @@ Module Program
 					Console.WriteLine($"-> {de.Key} : {de.Value}")
 				Next
 			End If
+			' Rethrow exception
+			'Throw ex
+
+			' Inner Exceptions
+			Try
+				Dim fs As FileStream = File.Open("C:\carErrors.txt", FileMode.Open)
+			Catch ex2 As Exception
+				Throw New CarIsDeadException(ex.Message, ex2)
+			End Try
 		Catch ex As Exception
-			' Process all other exceptions.
-			Console.WriteLine($"{ex.Message}")
+				' Process all other exceptions.
+				Console.WriteLine($"{ex.Message}")
 		End Try
 
 		' The error has been handled, processing continues with the next statement.
