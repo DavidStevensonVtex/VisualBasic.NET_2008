@@ -18,7 +18,16 @@ Module Program
 			Console.WriteLine($"Member type: {ex.TargetSite.MemberType}")
 			Console.WriteLine($"Message: {ex.Message}")
 			Console.WriteLine($"Source: {ex.Source}")
+			Console.WriteLine($"HelpLink: {ex.HelpLink}")
 			Console.WriteLine($"Stack: {ex.StackTrace}")
+
+			' By default, the data field is empty, so check for Nothing.
+			If (ex.Data IsNot Nothing) Then
+				Console.WriteLine("-> Custom Data: ")
+				For Each de As DictionaryEntry In ex.Data
+					Console.WriteLine($"-> {de.Key} : {de.Value}")
+				Next
+			End If
 		End Try
 
 		' The error has been handled, processing continues with the next statement.
