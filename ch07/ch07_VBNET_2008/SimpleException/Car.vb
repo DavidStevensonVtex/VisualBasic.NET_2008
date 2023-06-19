@@ -29,7 +29,7 @@
 			currSpeed += delta
 			If currSpeed > maxSpeed Then
 				' Throw new exception! This car is toast!
-				Dim ex As New Exception($"{petName} has overheated!")
+				Dim ex As New CarIsDeadException($"{petName} has overheated!")
 				ex.HelpLink = "http://www.CarsRUs.com"
 				ex.Data.Add("TimeStamp", $"The car exploded at {DateTime.Now}")
 				ex.Data.Add("Cause", "You have a lead foot.")
