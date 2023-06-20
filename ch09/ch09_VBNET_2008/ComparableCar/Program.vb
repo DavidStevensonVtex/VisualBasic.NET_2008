@@ -26,7 +26,7 @@ Module Program
 		Next
 
 		' Now sort by Pet Name.
-		Array.Sort(myAutos, New PetNameComparer())
+		Array.Sort(myAutos, New Car.PetNameComparer())
 
 		Console.WriteLine()
 		Console.WriteLine("-> Ordering by pet name:")
