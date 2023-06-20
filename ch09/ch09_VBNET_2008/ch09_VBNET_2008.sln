@@ -15,6 +15,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CloneablePoint", "Cloneable
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ComparableCar", "ComparableCar\ComparableCar.vbproj", "{4CD4F530-79AC-462B-AE77-1DB075F1EDEF}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EventInterface", "EventInterface\EventInterface.vbproj", "{74AE2B97-53FB-4670-9C77-778F95D275E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4CD4F530-79AC-462B-AE77-1DB075F1EDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD4F530-79AC-462B-AE77-1DB075F1EDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD4F530-79AC-462B-AE77-1DB075F1EDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AE2B97-53FB-4670-9C77-778F95D275E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AE2B97-53FB-4670-9C77-778F95D275E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AE2B97-53FB-4670-9C77-778F95D275E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AE2B97-53FB-4670-9C77-778F95D275E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
