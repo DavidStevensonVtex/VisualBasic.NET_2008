@@ -30,6 +30,18 @@ Module Program
 			Else
 				Console.WriteLine($"{s.PetName} does not implement IPointy!")
 			End If
+
+			' Is this item IDraw3D aware?
+			If TypeOf s Is IDraw3D Then
+				'DrawIn3D(s)
+				DrawIn3D(CType(s, IDraw3D))
+			End If
 		Next
+	End Sub
+
+	' This method can receive anything implemetning IDraw3D
+	Sub DrawIn3D(ByVal itf3d As IDraw3D)
+		Console.WriteLine("-> Drawing IDraw3D compatible type")
+		itf3d.Draw3D()
 	End Sub
 End Module

@@ -1,6 +1,6 @@
 ﻿Public Class Hexagon
 	Inherits Shape
-	Implements IPointy
+	Implements IPointy, IDraw3D
 
 	Public Sub New()
 	End Sub
@@ -18,4 +18,7 @@
 		Console.WriteLine("Drawing {0} the Hexagon", shapeName)
 	End Sub
 
+	Public Sub Draw3D() Implements IDraw3D.Draw3D
+		Console.WriteLine("Drawing Hexagon in 3D")
+	End Sub
 End Class
