@@ -50,7 +50,7 @@ Module Program
 		Console.WriteLine()
 	End Sub
 
-	' This method can receive anything implemetning IDraw3D
+	' This method can receive anything implementing IDraw3D
 	Sub DrawIn3D(ByVal itf3d As IDraw3D)
 		Console.WriteLine("-> Drawing IDraw3D compatible type")
 		itf3d.Draw3D()
