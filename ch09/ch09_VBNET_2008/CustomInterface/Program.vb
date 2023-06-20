@@ -37,6 +37,17 @@ Module Program
 				DrawIn3D(CType(s, IDraw3D))
 			End If
 		Next
+
+		' Can we extracxt IPointy from an Array of Integers?
+		Dim myInts() As Integer = {10, 20, 30}
+		Dim i As IPointy = ExtractPointyness(myInts)
+
+		' Nope!
+		If i Is Nothing Then
+			Console.WriteLine("Sorry, this object was not IPointy compatible.")
+		End If
+
+		Console.WriteLine()
 	End Sub
 
 	' This method can receive anything implemetning IDraw3D
@@ -44,4 +55,14 @@ Module Program
 		Console.WriteLine("-> Drawing IDraw3D compatible type")
 		itf3d.Draw3D()
 	End Sub
+
+	'This method tests for IPointy compatibility and,
+	' if able, returns an interface reference.
+	Function ExtractPointyness(ByVal o As Object) As IPointy
+		If TypeOf o Is IPointy Then
+			Return CType(o, IPointy)
+		Else
+			Return Nothing
+		End If
+	End Function
 End Module
