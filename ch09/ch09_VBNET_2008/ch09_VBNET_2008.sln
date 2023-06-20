@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InterfaceNameClash", "Inter
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InterfaceHierarchy", "InterfaceHierarchy\InterfaceHierarchy.vbproj", "{FEDD9524-70F4-4103-AEF7-2F1966737C96}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomEnumerator", "CustomEnumerator\CustomEnumerator.vbproj", "{5308A20A-C0E8-4C0A-8AEC-5338BB9CA0B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FEDD9524-70F4-4103-AEF7-2F1966737C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEDD9524-70F4-4103-AEF7-2F1966737C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEDD9524-70F4-4103-AEF7-2F1966737C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5308A20A-C0E8-4C0A-8AEC-5338BB9CA0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5308A20A-C0E8-4C0A-8AEC-5338BB9CA0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5308A20A-C0E8-4C0A-8AEC-5338BB9CA0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5308A20A-C0E8-4C0A-8AEC-5338BB9CA0B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
