@@ -24,6 +24,17 @@ Module Program
 		For Each c As Car In myAutos
 			Console.WriteLine($"Car {c.CarID,3} is named {c.PetName}")
 		Next
+
+		' Now sort by Pet Name.
+		Array.Sort(myAutos, New PetNameComparer())
+
+		Console.WriteLine()
+		Console.WriteLine("-> Ordering by pet name:")
+		For Each c As Car In myAutos
+			Console.WriteLine($"Car {c.CarID,3} is named {c.PetName}")
+		Next
+
+
 		Console.WriteLine()
 	End Sub
 End Module
