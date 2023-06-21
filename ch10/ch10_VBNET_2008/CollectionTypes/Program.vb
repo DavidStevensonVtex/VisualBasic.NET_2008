@@ -4,6 +4,7 @@ Module Program
 	Sub Main(args As String())
 		ArrayListTest()
 		QueueTest()
+		StackTest()
 	End Sub
 	Sub ArrayListTest()
 		' Make ArrayList and add a range of Cars.
@@ -55,6 +56,31 @@ Module Program
 		' Try to de-Q again?
 		Try
 			WashCar(CType(carWashQ.Dequeue(), Car))
+		Catch ex As Exception
+			Console.WriteLine($"Error!! {ex.Message}")
+		End Try
+	End Sub
+
+	Sub StackTest()
+		Console.WriteLine()
+		Console.WriteLine("StackTest")
+
+		Dim stringStack As New Stack
+		stringStack.Push("One")
+		stringStack.Push("Two")
+		stringStack.Push("Three")
+
+		' Now look at the top item, pop it, and look again.
+		Console.WriteLine($"Top item is: {stringStack.Peek()}")
+		Console.WriteLine($"Popped off {stringStack.Pop()}")
+		Console.WriteLine($"Top item is: {stringStack.Peek()}")
+		Console.WriteLine($"Popped off {stringStack.Pop()}")
+		Console.WriteLine($"Top item is: {stringStack.Peek()}")
+		Console.WriteLine($"Popped off {stringStack.Pop()}")
+
+		Try
+			Console.WriteLine($"Top item is: {stringStack.Peek()}")
+			Console.WriteLine($"Popped off {stringStack.Pop()}")
 		Catch ex As Exception
 			Console.WriteLine($"Error!! {ex.Message}")
 		End Try
