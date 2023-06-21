@@ -4,12 +4,12 @@
 	Public Property BoolValue As Nullable(Of Boolean) = True
 
 	' Note the nullable return time.
-	Public Function GetIntFromDatabase() As Nullable(Of Integer)
+	Public Function GetIntFromDatabase() As Integer?
 		Return NumericValue
 	End Function
 
 	' Note the nullable return type.
-	Public Function GetBoolFromDatabase() As Nullable(Of Boolean)
+	Public Function GetBoolFromDatabase() As Boolean?
 		Return BoolValue
 	End Function
 
