@@ -13,15 +13,16 @@ Module Program
 	End Sub
 
 	' Event Handlers.
-	Public Sub MyExplodedEventHanlder(ByVal s As String) Handles c.Exploded
+	' A single handler for each event.
+	Public Sub MyExplodedEventHandler(ByVal s As String) Handles c.Exploded, c.AboutToBlow
 		Console.WriteLine(s)
 	End Sub
 
-	Public Sub MyCarIsAboutToDieHandler(ByVal s As String) Handles c.AboutToBlow
-		Console.WriteLine(s)
-	End Sub
-	Public Sub MyCarIsAboutToDieHandler2(ByVal s As String) Handles c.AboutToBlow
-		Console.WriteLine(s)
-	End Sub
+	'Public Sub MyCarIsAboutToDieHandler(ByVal s As String) Handles c.AboutToBlow
+	'	Console.WriteLine(s)
+	'End Sub
+	'Public Sub MyCarIsAboutToDieHandler2(ByVal s As String) Handles c.AboutToBlow
+	'	Console.WriteLine(s)
+	'End Sub
 
 End Module
