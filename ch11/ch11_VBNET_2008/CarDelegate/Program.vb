@@ -8,7 +8,9 @@ Module Program
 		' Pass the address of the methods that will be maintained
 		' by the delegate member variables of the Car type.
 
+		' Register multiple event handlers!
 		c1.OnAboutToBlow(AddressOf CarAboutToBlow)
+		c1.OnAboutToBlow(AddressOf CarIsAlmostDoomed)
 		c1.OnExploded(AddressOf CarExploded)
 
 		Console.WriteLine("***** Speeding Up *****")
@@ -22,6 +24,11 @@ Module Program
 	Public Sub CarAboutToBlow(ByVal msg As String)
 		Console.WriteLine(msg)
 	End Sub
+
+	Public Sub CarIsAlmostDoomed(ByVal msg As String)
+		Console.WriteLine(msg)
+	End Sub
+
 	Public Sub CarExploded(ByVal msg As String)
 		Console.WriteLine(msg)
 	End Sub

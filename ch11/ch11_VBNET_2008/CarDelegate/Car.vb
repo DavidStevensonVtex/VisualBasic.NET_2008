@@ -7,14 +7,14 @@
 	Private almostDeadList As CarDelegateHandler
 	Private explodedList As CarDelegateHandler
 
-	' To allo the caller to pass us a delegate object.
-	Public Sub OnAboutToBlow(ByVal clientMethod As CarDelegateHandler)
-		almostDeadList = clientMethod
-	End Sub
+    ' To allo the caller to pass us a delegate object.
+    Public Sub OnAboutToBlow(ByVal clientMethod As CarDelegateHandler)
+        almostDeadList = CType(System.Delegate.Combine(almostDeadList, clientMethod), CarDelegateHandler)
+    End Sub
 
-	Public Sub OnExploded(ByVal clientMethod As CarDelegateHandler)
-		explodedList = clientMethod
-	End Sub
+    Public Sub OnExploded(ByVal clientMethod As CarDelegateHandler)
+        explodedList = CType(System.Delegate.Combine(explodedList, clientMethod), CarDelegateHandler)
+    End Sub
 
     ' Constant for maximum speed.
     Public Const maxSpeed As Integer = 100
