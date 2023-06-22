@@ -12,5 +12,15 @@ Module Program
 		' Invoke the method "pointed to."
 		Console.WriteLine($"10 + 10 is {b(10, 10)}")
 		Console.WriteLine()
+
+		' Display details about "b"
+		DisplayDelegateINfo(b)
+	End Sub
+
+	Sub DisplayDelegateINfo(ByVal delObj As System.Delegate)
+		For Each d As System.Delegate In delObj.GetInvocationList()
+			Console.WriteLine($"Method Name: {d.Method}")
+			Console.WriteLine($"Type Name:   {d.Target}")
+		Next
 	End Sub
 End Module
