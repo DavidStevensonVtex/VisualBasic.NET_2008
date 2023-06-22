@@ -20,5 +20,8 @@ Module Program
 	Public Sub MyCarIsAboutToDieHandler(ByVal s As String) Handles c.AboutToBlow
 		Console.WriteLine(s)
 	End Sub
+	Public Sub MyCarIsAboutToDieHandler2(ByVal s As String) Handles c.AboutToBlow
+		Console.WriteLine(s)
+	End Sub
 
 End Module
