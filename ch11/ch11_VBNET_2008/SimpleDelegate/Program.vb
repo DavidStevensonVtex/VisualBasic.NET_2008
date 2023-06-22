@@ -7,7 +7,10 @@ Module Program
 		' Make a delegate object and add a method to the invocation
 		' list using the AddressOf keyword.
 
-		Dim b As BinaryOp = New BinaryOp(AddressOf SimpleMath.Add)
+		' Make a new SimpleMath object.
+		Dim myMath As New SimpleMath()
+
+		Dim b As BinaryOp = New BinaryOp(AddressOf myMath.Add)
 
 		' Invoke the method "pointed to."
 		Console.WriteLine($"10 + 10 is {b(10, 10)}")
