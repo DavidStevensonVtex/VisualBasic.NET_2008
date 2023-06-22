@@ -18,6 +18,16 @@ Module Program
 			c1.Accelerate(20)
 		Next
 		Console.WriteLine()
+
+		' Remove CarExploded from invocation list.
+		c1.RemoveExploded(AddressOf CarExploded)
+
+		' This will not fire the Exploded event.
+		For i As Integer = 0 To 5
+			c1.Accelerate(20)
+		Next
+
+		Console.WriteLine()
 	End Sub
 
 	' These are called by the Car object.

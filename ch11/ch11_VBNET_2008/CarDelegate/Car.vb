@@ -8,8 +8,15 @@
 	Private explodedList As CarDelegateHandler
 
     ' To allo the caller to pass us a delegate object.
+    Public Sub RemoveAboutToBlow(ByVal clientMethod As CarDelegateHandler)
+        almostDeadList = CType(System.Delegate.Remove(almostDeadList, clientMethod), CarDelegateHandler)
+    End Sub
     Public Sub OnAboutToBlow(ByVal clientMethod As CarDelegateHandler)
         almostDeadList = CType(System.Delegate.Combine(almostDeadList, clientMethod), CarDelegateHandler)
+    End Sub
+
+    Public Sub RemoveExploded(ByVal clientMethod As CarDelegateHandler)
+        explodedList = CType(System.Delegate.Remove(explodedList, clientMethod), CarDelegateHandler)
     End Sub
 
     Public Sub OnExploded(ByVal clientMethod As CarDelegateHandler)
