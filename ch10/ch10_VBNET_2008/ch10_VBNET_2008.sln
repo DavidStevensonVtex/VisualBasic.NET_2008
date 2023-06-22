@@ -13,6 +13,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NulllableData", "NulllableD
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GenericSwapMethod", "GenericSwapMethod\GenericSwapMethod.vbproj", "{FF91F6F5-F667-4B4A-8974-9A02758D8B72}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GenericInterface", "GenericInterface\GenericInterface.vbproj", "{35A8AE16-6E41-44AA-BA4F-956AC7141259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FF91F6F5-F667-4B4A-8974-9A02758D8B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF91F6F5-F667-4B4A-8974-9A02758D8B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF91F6F5-F667-4B4A-8974-9A02758D8B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A8AE16-6E41-44AA-BA4F-956AC7141259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A8AE16-6E41-44AA-BA4F-956AC7141259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A8AE16-6E41-44AA-BA4F-956AC7141259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A8AE16-6E41-44AA-BA4F-956AC7141259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
