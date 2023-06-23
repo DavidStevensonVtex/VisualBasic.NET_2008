@@ -5,6 +5,8 @@ Module Program
 		Console.WriteLine("***** Fun with Operator Overloading ******" & vbCrLf)
 		AddSubtractMyPointsWithMethodCalls()
 		Console.WriteLine()
+		TestMyPointsForEquality()
+		Console.WriteLine()
 	End Sub
 
 	Sub AddSubtractMyPointsWithMethodCalls()
@@ -18,5 +20,14 @@ Module Program
 
 		' Subtract two MyPoints using Subtract() method.
 		Console.WriteLine($"{p1} - {p2} = {p1 - p2}")
+	End Sub
+
+	' Make use of the overloaded equality operators.
+	Sub TestMyPointsForEquality()
+		Dim ptOne As New MyPoint(10, 2)
+		Dim ptTWo As New MyPoint(10, 44)
+
+		Console.WriteLine($"ptOne = ptTwo : {ptOne = ptTWo}")
+		Console.WriteLine($"ptOne <> ptTwo : {ptOne <> ptTWo}")
 	End Sub
 End Module
