@@ -9,17 +9,19 @@ Module Program
 		Dim myCar As New Car
 		Dim iTB As ITurboBoost
 		Try
-			iTB = CType(myCar, ITurboBoost)
+			iTB = DirectCast(myCar, ITurboBoost)
 		Catch ex As Exception
 			Console.WriteLine("Car does not implement ITurboBoost interface.")
 		End Try
 
 		' This CType() is A-OK, as SportsCar does implement ITurboBoost.
 		Dim myViper As New SportsCar()
-		iTB = CType(myViper, ITurboBoost)
+		iTB = DirectCast(myViper, ITurboBoost)
 
 		' CType() can also be used to narrow or widen between primitive types
 		Dim i As Integer = 200
-		Dim b As Byte = CType(i, Byte)
+		'Dim b As Byte = DirectCast(i, Byte)
+		' Severity	Code	Description	Project	File	Line	Suppression State
+		'Error BC30311	Value Of type 'Integer' cannot be converted to 'Byte'.
 	End Sub
 End Module
