@@ -49,8 +49,7 @@ Module Program
 		' Allocated on the stack!
 		Dim p As New MyPoint()
 
-		' Note lack of New keyword
-		Dim p1 As MyPoint
+		Dim p1 As New MyPoint()
 		p1.X = 100
 		p1.Y = 100
 	End Sub

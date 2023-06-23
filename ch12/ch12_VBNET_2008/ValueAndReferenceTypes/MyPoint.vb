@@ -1,8 +1,10 @@
-﻿Public Structure MyPoint
+﻿Public Class MyPoint
 	Implements IComparable
 	Public Property X As Integer
 	Public Property Y As Integer
 
+	Public Sub New()
+	End Sub
 	Public Sub New(ByVal xpos As Integer, ByVal ypos As Integer)
 		X = xpos : Y = ypos
 	End Sub
@@ -70,4 +72,4 @@
 	Public Shared Operator >=(ByVal p1 As MyPoint, ByVal p2 As MyPoint) As Boolean
 		Return (p1.CompareTo(p2) >= 0)
 	End Operator
-End Structure
+End Class
