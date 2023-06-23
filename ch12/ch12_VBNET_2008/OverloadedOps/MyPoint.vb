@@ -10,13 +10,13 @@
 		Return $"[{X}, {Y}]"
 	End Function
 
-	' Adding two MyPoint objects to yield a new MyPoint.
-	Public Shared Function Add(ByVal p1 As MyPoint, ByVal p2 As MyPoint)
+	' Overloaded Operator +
+	Public Shared Operator +(ByVal p1 As MyPoint, ByVal p2 As MyPoint) As MyPoint
 		Return New MyPoint(p1.X + p2.X, p1.Y + p2.Y)
-	End Function
+	End Operator
 
-	' Subtracting two MyPoint objects to yield a new MyPoint.
-	Public Shared Function Subtract(ByVal p1 As MyPoint, ByVal p2 As MyPoint)
+	' Overloaded Operator -
+	Public Shared Operator -(ByVal p1 As MyPoint, ByVal p2 As MyPoint) As MyPoint
 		Return New MyPoint(p1.X - p2.X, p1.Y - p2.Y)
-	End Function
+	End Operator
 End Structure

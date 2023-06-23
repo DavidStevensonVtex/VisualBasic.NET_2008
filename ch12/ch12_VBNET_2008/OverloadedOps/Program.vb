@@ -12,11 +12,11 @@ Module Program
 		Dim p2 As New MyPoint(20, 30)
 
 		' Add two MyPoints using Add() method
-		Dim newPoint = MyPoint.Add(p1, p2)
+		Dim newPoint = p1 + p2
 		Console.WriteLine($"p1 + p2 = {newPoint}")
 		Console.WriteLine($"{p1} + {p2} = {newPoint}")
 
 		' Subtract two MyPoints using Subtract() method.
-		Console.WriteLine($"{p1} - {p2} = {MyPoint.Subtract(p1, p2)}")
+		Console.WriteLine($"{p1} - {p2} = {p1 - p2}")
 	End Sub
 End Module
