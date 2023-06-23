@@ -7,6 +7,8 @@ Module Program
 		Console.WriteLine()
 		TestMyPointsForEquality()
 		Console.WriteLine()
+		TestMyPointsForGreaterLessThan()
+		Console.WriteLine()
 	End Sub
 
 	Sub AddSubtractMyPointsWithMethodCalls()
@@ -29,5 +31,16 @@ Module Program
 
 		Console.WriteLine($"ptOne = ptTwo : {ptOne = ptTWo}")
 		Console.WriteLine($"ptOne <> ptTwo : {ptOne <> ptTWo}")
+	End Sub
+
+	' Using the overloaded comparison operators.
+	Sub TestMyPointsForGreaterLessThan()
+		Dim ptOne As New MyPoint(5, 2)
+		Dim ptTwo As New MyPoint(5, 44)
+
+		Console.WriteLine($"{ptOne} > {ptTwo} : {ptOne > ptTwo}")
+		Console.WriteLine($"{ptOne} < {ptTwo} : {ptOne < ptTwo}")
+		Console.WriteLine($"{ptOne} >= {ptTwo} : {ptOne >= ptTwo}")
+		Console.WriteLine($"{ptOne} <= {ptTwo} : {ptOne <= ptTwo}")
 	End Sub
 End Module
