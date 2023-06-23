@@ -11,6 +11,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ValueTypeContainingReferenc
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ReferenceTypeValueTypeParams", "ReferenceTypeValueTypeParams\ReferenceTypeValueTypeParams.vbproj", "{FC0D1AE1-A581-4AD5-BC0B-4DF33D26354F}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomConversions", "CustomConversions\CustomConversions.vbproj", "{6FAC0D90-ED7D-48A6-B1D0-2419E15F8CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FC0D1AE1-A581-4AD5-BC0B-4DF33D26354F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC0D1AE1-A581-4AD5-BC0B-4DF33D26354F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC0D1AE1-A581-4AD5-BC0B-4DF33D26354F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FAC0D90-ED7D-48A6-B1D0-2419E15F8CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAC0D90-ED7D-48A6-B1D0-2419E15F8CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAC0D90-ED7D-48A6-B1D0-2419E15F8CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAC0D90-ED7D-48A6-B1D0-2419E15F8CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
