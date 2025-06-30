@@ -4,7 +4,7 @@
         ' Show banner.
         DisplayBanner()
         ' Get User's name and say howday.
-        GreetUser()
+        MyModule.GreetUser()
     End Sub
 
     Sub DisplayBanner()
