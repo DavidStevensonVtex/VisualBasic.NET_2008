@@ -5,6 +5,13 @@
         DisplayBanner()
         ' Get User's name and say howday.
         MyModule.GreetUser()
+
+        ' Add some numbers
+        Console.WriteLine("10 + 10 is {0}.", Add(10, 10))
+
+        ' Subtract some numbers
+        ' (module prefix optional).
+        Console.WriteLine("10 - 10 is {0}.", MyMathModule.Subtract(10, 10))
     End Sub
 
     Sub DisplayBanner()
