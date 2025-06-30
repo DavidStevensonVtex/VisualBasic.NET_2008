@@ -15,6 +15,7 @@
         Dim s1 As String = "Programming the "
         Dim s2 As String = "PsychoDrill (PTP)"
         Dim s3 = s1 & s2
+        s3 = String.Concat(s1, s2)
         Console.WriteLine(s3)
 
     End Sub
