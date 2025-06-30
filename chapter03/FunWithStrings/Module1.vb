@@ -12,6 +12,11 @@
         Console.WriteLine("Hex value of myValue is: {0:X}", myValue)
         Console.WriteLine("Currency value of myValue is: {0:C}", myValue)
 
+        Dim s1 As String = "Programming the "
+        Dim s2 As String = "PsychoDrill (PTP)"
+        Dim s3 = s1 & s2
+        Console.WriteLine(s3)
+
     End Sub
 
 End Module
