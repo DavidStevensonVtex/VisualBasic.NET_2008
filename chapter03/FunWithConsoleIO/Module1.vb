@@ -28,6 +28,10 @@
         Console.WriteLine("X format: {0:X}", 99999)
         Console.WriteLine("x format: {0:x}", 99999)
 
+        ' Use the shared String.Format() method to build a new string.
+        Dim formatStr As String
+        formatStr = String.Format("Don't you wish you had {0:C} in your account?", 99999.987)
+        Console.WriteLine(formatStr)
     End Sub
 
 End Module
