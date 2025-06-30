@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FunWithMain", "FunWithMain\
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FunWithConsoleIO", "FunWithConsoleIO\FunWithConsoleIO.vbproj", "{5F3217D1-9BB0-451D-B32B-962141DDEAB6}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FunWithDataTypes", "FunWithDataTypes\FunWithDataTypes.vbproj", "{E6BB8D59-A170-441A-81C2-8746F5AD2ED5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5F3217D1-9BB0-451D-B32B-962141DDEAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F3217D1-9BB0-451D-B32B-962141DDEAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F3217D1-9BB0-451D-B32B-962141DDEAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BB8D59-A170-441A-81C2-8746F5AD2ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BB8D59-A170-441A-81C2-8746F5AD2ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BB8D59-A170-441A-81C2-8746F5AD2ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BB8D59-A170-441A-81C2-8746F5AD2ED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
