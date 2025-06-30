@@ -18,6 +18,16 @@
         Console.WriteLine("Value of theInt: {0}", theInt)
         Console.WriteLine("theDouble is {0} and theBool is {1}.", theDouble, theBool)
 
+        ' Now make use of some format tags.
+
+        Console.WriteLine("C format: {0:C}", 99989.987)
+        Console.WriteLine("D9 format: {0:D9}", 99999)
+        Console.WriteLine("E format: {0:E}", 99999.76543)
+        Console.WriteLine("F3 format: {0:F3}", 99999.9999)
+        Console.WriteLine("N format: {0:N}", 99999)
+        Console.WriteLine("X format: {0:X}", 99999)
+        Console.WriteLine("x format: {0:x}", 99999)
+
     End Sub
 
 End Module
