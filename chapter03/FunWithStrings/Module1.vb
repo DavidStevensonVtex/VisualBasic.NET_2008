@@ -1,4 +1,6 @@
-﻿Module Module1
+﻿Imports System.Text
+
+Module Module1
 
     Sub Main()
         Console.WriteLine("***** Fun with Strings *****")
@@ -17,6 +19,17 @@
         Dim s3 = s1 & s2
         s3 = String.Concat(s1, s2)
         Console.WriteLine(s3)
+
+        ' Use the StringBuilder
+        Dim sb As New StringBuilder("**** Fantastic Games *****")
+        sb.Append(vbLf)
+        sb.AppendLine("Half Life 2")
+        sb.AppendLine("Beyond God and Evil")
+        sb.AppendLine("Deus Ex 1 and 2")
+        sb.AppendLine("System Shock")
+        sb.Replace("2", "Deus Ex: Invisible War")
+        Console.WriteLine(sb)
+        Console.WriteLine("sb has {0} chars.", sb.Length)
 
     End Sub
 
