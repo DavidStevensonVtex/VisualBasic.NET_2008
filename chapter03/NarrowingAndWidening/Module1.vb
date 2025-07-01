@@ -14,6 +14,7 @@
 
         myByte = CByte(myInt)
         myByte = CType(myInt, Byte)
+        myByte = Convert.ToByte(myInt)
         Console.WriteLine("Value of myByte: {0}", myByte)
 
     End Sub
