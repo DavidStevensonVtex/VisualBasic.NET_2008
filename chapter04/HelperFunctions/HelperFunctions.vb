@@ -9,6 +9,22 @@
         msg = "Thank you for calling this method"
     End Sub
 
+    Sub PrintFormattedMessage(ByVal msg As String,
+                              Optional ByVal upperCase As Boolean = False,
+                              Optional ByVal timesToRepeat As Integer = 0,
+                              Optional ByVal textColor As ConsoleColor = ConsoleColor.Green)
+        ' Store current console foreground color.
+        Dim fGroundColor As ConsoleColor = Console.ForegroundColor
+        ' Set console foreground color.
+        Console.ForegroundColor = textColor
+        ' Print message in correct case x number of times.
+        For i As Integer = 0 To timesToRepeat
+            Console.WriteLine(msg)
+        Next
+        ' Reset current console foreground color
+        Console.ForegroundColor = fGroundColor
+    End Sub
+
     ' Functions have a return value
     Function Add(ByVal x As Integer, ByVal y As Integer) As Integer
         Dim answer As Integer = x + y
@@ -31,6 +47,18 @@
         ' This string is now passed by value, even though the parameter is marked ByRef.
         PrintMessage((msg))
         Console.WriteLine($"After call msg = {msg}")
+
+        ' Accept all defaults for the optional args.
+        PrintFormattedMessage("Call One")
+
+        ' Provide each optinal argument.
+        PrintFormattedMessage("Call Two", True, 5, ConsoleColor.Yellow)
+
+        ' Print this message in current case, one time, in gray.
+        PrintFormattedMessage("Call Three", , , ConsoleColor.Gray)
+
+        ' Same as previously shown, but cleaner!
+        PrintFormattedMessage("Call Four", textColor:=ConsoleColor.Gray)
 
     End Sub
 
