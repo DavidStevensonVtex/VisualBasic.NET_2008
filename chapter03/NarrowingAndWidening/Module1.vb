@@ -4,9 +4,7 @@
         Console.WriteLine("***** The Amazing Addition Program *****")
         Dim a As Short = 30000
         Dim b As Short = 30000
-        Dim answer As Short = Add(a, b)
-        '     Unhandled Exception: System.OverflowException : Arithmetic operation resulted in an overflow.
-        '     at NarrowingAndWidening.Module1.Main() in Module1.vb: line 7
+        Dim answer As Integer = Add(a, b)
         Console.WriteLine("a + b = {0}", answer)
 
     End Sub
