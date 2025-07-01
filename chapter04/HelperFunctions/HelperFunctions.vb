@@ -39,6 +39,9 @@
         Dim x, y As Integer
         x = 10 : y = 20
         Console.WriteLine($"{x} + {y} = {Add(x, y)}")
+        Dim a, b As Integer
+        a = 123 : b = 345
+        Console.WriteLine($"{a} + {b} = {Add(y:=b, x:=a)}")
 
         ' x is still 10, and y is still 20
         Console.WriteLine($"After call x = {x} and y = {y}")
