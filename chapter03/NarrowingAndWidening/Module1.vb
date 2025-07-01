@@ -13,6 +13,7 @@
         'myByte = myInt
 
         myByte = CByte(myInt)
+        myByte = CType(myInt, Byte)
         Console.WriteLine("Value of myByte: {0}", myByte)
 
     End Sub
