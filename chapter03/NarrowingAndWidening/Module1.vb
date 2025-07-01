@@ -1,13 +1,12 @@
-﻿' OPtion directives  must be the very first code statements in a .vb file!
-Option Strict On
-
-Module Module1
+﻿Module Module1
 
     Sub Main()
         Console.WriteLine("***** The Amazing Addition Program *****")
         Dim a As Short = 30000
         Dim b As Short = 30000
-        Dim answer As Short = Add(a, b)     ' error BC30512: Option Strict On disallows implicit conversions from 'Integer' to 'Short'.
+        Dim answer As Short = Add(a, b)
+        ' Implicit conversion from 'Integer' to 'Short'.
+        ' Option Strict On disallows implicit conversions from 'Integer' to 'Short'.
         Console.WriteLine("a + b = {0}", answer)
 
     End Sub
