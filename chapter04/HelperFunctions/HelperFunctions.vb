@@ -33,6 +33,15 @@
         Return answer
     End Function
 
+    Function CalculateAverage(ByVal ParamArray itemsToAvg() As Integer) As Double
+        Dim itemCount As Integer = UBound(itemsToAvg)
+        Dim result As Integer
+        For i As Integer = 0 To itemCount
+            result += itemsToAvg(i)
+        Next
+        Return result / itemCount
+    End Function
+
     Sub Main()
         Console.WriteLine("***** Fun with Methods *****")
         ' Pass two Integers by value.
@@ -62,6 +71,13 @@
 
         ' Same as previously shown, but cleaner!
         PrintFormattedMessage("Call Four", textColor:=ConsoleColor.Gray)
+
+        ' ParamArray data can be sent as a caller-supplied array
+        ' or a comma-delimited list of arguments.
+        Console.WriteLine(CalculateAverage(10, 11, 12, 44))
+
+        Dim data() As Integer = {22, 33, 44, 55}
+        Console.WriteLine(CalculateAverage(data))
 
     End Sub
 
