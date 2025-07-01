@@ -2,7 +2,7 @@
 
     Sub Main()
         Console.WriteLine("***** Fun with Arrays *****")
-        SimpleArrays()
+        SimpleArrays3()
     End Sub
 
     Sub SimpleArrays()
@@ -37,6 +37,14 @@
 
         ' An array of 5 objects
         Dim myObjs(4) As Object
+    End Sub
+
+    Sub SimpleArrays3()
+        ' An array of 3 Integers
+        Dim myInts() As Integer = {100, 200, 300}
+        For Each i As Integer In myInts
+            Console.WriteLine(i)
+        Next
     End Sub
 
 End Module
