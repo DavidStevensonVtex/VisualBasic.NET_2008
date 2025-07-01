@@ -25,4 +25,10 @@
         Return x + y
     End Function
 
+    Sub MyMethod()
+        Dim s As String
+        Dim i As Integer
+        s = "Fred" : i = 10
+    End Sub
+
 End Module
