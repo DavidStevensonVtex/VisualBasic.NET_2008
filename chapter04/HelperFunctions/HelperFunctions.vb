@@ -25,6 +25,14 @@
         Console.ForegroundColor = fGroundColor
     End Sub
 
+    Sub PrintLocalCounter()
+        ' Note the Static keyword
+        Static Dim localCounter As Integer
+
+        localCounter += 1
+        Console.Write($"{localCounter} ")
+    End Sub
+
     ' Functions have a return value
     Function Add(ByVal x As Integer, ByVal y As Integer) As Integer
         Dim answer As Integer = x + y
@@ -78,6 +86,10 @@
 
         Dim data() As Integer = {22, 33, 44, 55}
         Console.WriteLine(CalculateAverage(data))
+
+        For i As Integer = 0 To 10
+            PrintLocalCounter()
+        Next
 
     End Sub
 
