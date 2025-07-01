@@ -19,7 +19,9 @@
 
     End Sub
 
-    Function Add(ByVal x As Integer, ByVal y As Integer) As Integer
+    Function Add(ByVal x As Integer,
+                 ByVal y As Integer) _
+                 As Integer
         Return x + y
     End Function
 
