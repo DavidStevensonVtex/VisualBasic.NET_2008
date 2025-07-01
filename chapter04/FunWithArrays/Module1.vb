@@ -2,7 +2,7 @@
 
     Sub Main()
         Console.WriteLine("***** Fun with Arrays *****")
-        SimpleArrays3()
+        ArrayOfObjects()
     End Sub
 
     Sub SimpleArrays()
@@ -44,6 +44,21 @@
         Dim myInts() As Integer = {100, 200, 300}
         For Each i As Integer In myInts
             Console.WriteLine(i)
+        Next
+    End Sub
+
+    Sub ArrayOfObjects()
+        Console.WriteLine("=> Array of Objects.")
+        ' An array of Objects can be anything at all.
+        Dim myObjects(3) As Object
+        myObjects(0) = 10
+        myObjects(1) = False
+        myObjects(2) = New DateTime(1969, 3, 24)
+        myObjects(3) = "Form & Void"
+
+        For Each obj As Object In myObjects
+            ' Print the type and value for each item in array.
+            Console.WriteLine("Type: {0}, Value: {1}", obj.GetType(), obj)
         Next
     End Sub
 
