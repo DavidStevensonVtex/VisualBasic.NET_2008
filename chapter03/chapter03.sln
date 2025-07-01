@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FunWithModules", "FunWithModules\FunWithModules.vbproj", "{5D8A2214-99C7-4AD3-8AA0-7AB2827D962C}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FunWithDataTypes", "FunWithDataTypes\FunWithDataTypes.vbproj", "{E6BB8D59-A170-441A-81C2-8746F5AD2ED5}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FunWithStrings", "FunWithStrings\FunWithStrings.vbproj", "{080E8C8B-5889-4DA3-AFC0-54AF3BF6BD92}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NarrowingAndWidening", "NarrowingAndWidening\NarrowingAndWidening.vbproj", "{DBA33194-3354-4A13-8555-3FAC3DD47094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{080E8C8B-5889-4DA3-AFC0-54AF3BF6BD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{080E8C8B-5889-4DA3-AFC0-54AF3BF6BD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{080E8C8B-5889-4DA3-AFC0-54AF3BF6BD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA33194-3354-4A13-8555-3FAC3DD47094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA33194-3354-4A13-8555-3FAC3DD47094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA33194-3354-4A13-8555-3FAC3DD47094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA33194-3354-4A13-8555-3FAC3DD47094}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
