@@ -28,7 +28,8 @@
         Console.WriteLine($"After call x = {x} and y = {y}")
 
         Dim msg As String = "Hello from Main!"
-        PrintMessage(msg)
+        ' This string is now passed by value, even though the parameter is marked ByRef.
+        PrintMessage((msg))
         Console.WriteLine($"After call msg = {msg}")
 
     End Sub
