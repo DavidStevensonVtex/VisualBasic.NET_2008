@@ -2,8 +2,11 @@
     ' In VB.NET, the default parameter passing mode is ByVal. 
 
     ' Subroutines have no return value
-    Sub PrintMessage(ByVal msg As String)
-        Console.WriteLine(msg)
+    Sub PrintMessage(ByRef msg As String)
+        Console.WriteLine($"Your message is: {msg}")
+
+        ' Caller will see this change, as "msg" is passed ByRef.
+        msg = "Thank you for calling this method"
     End Sub
 
     ' Functions have a return value
@@ -23,6 +26,10 @@
 
         ' x is still 10, and y is still 20
         Console.WriteLine($"After call x = {x} and y = {y}")
+
+        Dim msg As String = "Hello from Main!"
+        PrintMessage(msg)
+        Console.WriteLine($"After call msg = {msg}")
 
     End Sub
 
