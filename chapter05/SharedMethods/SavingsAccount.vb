@@ -2,12 +2,17 @@
 
 Public Class SavingsAccount
     Public currBalance As Double
+    Public Shared currInterestRate As Double
 
-    ' A Shared point of data
-    Public Shared currInterestRate As Double = 0.04
+    ' A shared constructor.
+    Shared Sub New()
+        Console.WriteLine("In Shared ctor!")
+        currInterestRate = 0.04
+    End Sub
 
     Public Sub New(ByVal balance As Double)
         currBalance = balance
+        'currInterestRate = 0.04
     End Sub
 
     ' Shared members to get/set interest rate.
