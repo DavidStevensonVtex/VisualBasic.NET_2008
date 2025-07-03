@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SharedMethods", "SharedMeth
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AggregationExample", "AggregationExample\AggregationExample.vbproj", "{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InheritanceAndPolymorphism", "InheritanceAndPolymorphism\InheritanceAndPolymorphism.vbproj", "{BCD25286-E4FF-4E26-A351-86894012700B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD25286-E4FF-4E26-A351-86894012700B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD25286-E4FF-4E26-A351-86894012700B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD25286-E4FF-4E26-A351-86894012700B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD25286-E4FF-4E26-A351-86894012700B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
