@@ -21,7 +21,20 @@
 
     ' Out custom constructor.
     Public Sub New(ByVal intensity As Integer)
+        Me.New(intensity, "")
+    End Sub
+
+    Public Sub New(ByVal name As String)
+        Me.New(5, name)
+    End Sub
+
+    ' This is the "master" constructor that does all the real work.
+    Public Sub New(ByVal intensity As Integer, ByVal name As String)
+        If intensity > 10 Then
+            intensity = 10
+        End If
         driverIntensity = intensity
+        driverName = name
     End Sub
 
 End Class
