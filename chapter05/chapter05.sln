@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SimpleClassExample", "Simpl
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SharedMethods", "SharedMethods\SharedMethods.vbproj", "{60C34BDC-B389-4131-8403-C23A12FC1856}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AggregationExample", "AggregationExample\AggregationExample.vbproj", "{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{60C34BDC-B389-4131-8403-C23A12FC1856}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60C34BDC-B389-4131-8403-C23A12FC1856}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60C34BDC-B389-4131-8403-C23A12FC1856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D29C63E-3C9F-46CC-BE31-81334A4C0A27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
