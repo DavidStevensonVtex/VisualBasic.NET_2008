@@ -50,6 +50,10 @@
         ' Make a contractor type
         Dim emp As EmpType = EmpType.Contractor
         AskForBonus(emp)
+
+        ' Compiler error!
+        Console.WriteLine("EmpType uses a {0} for storage",
+            [Enum].GetUnderlyingType(emp.GetType()))
     End Sub
 
 End Module
