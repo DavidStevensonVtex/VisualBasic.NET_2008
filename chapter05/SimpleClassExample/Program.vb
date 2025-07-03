@@ -1,6 +1,15 @@
 ﻿Module Program
 
     Sub Main()
+        ' Make a motorcycle named Tiny
+        Dim c As New Motorcycle(5)
+        c.SetDriverName("Tiny")
+        c.PopAWheely()
+
+        Console.WriteLine($"Rider name is {c.driverName}")
+    End Sub
+
+    Sub MainOld()
         ' Make a Car called Chuck going 10 MPH.
         Dim chuck As New Car()
         chuck.PrintState()
@@ -14,7 +23,7 @@
         daisy.PrintState()
     End Sub
 
-    Sub MainOld()
+    Sub MainOlder()
         Console.WriteLine("***** Fun with Class Types *****")
         ' Allocate and configure a Car object
         Dim myCar As New Car()

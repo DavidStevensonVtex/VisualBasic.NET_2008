@@ -1,5 +1,10 @@
 ﻿Public Class Motorcycle
     Public driverIntensity As Integer
+    Public driverName As String
+
+    Public Sub SetDriverName(ByVal name As String)
+        Me.driverName = name
+    End Sub
 
     Public Sub PopAWheely()
         For i As Integer = 0 To driverIntensity
