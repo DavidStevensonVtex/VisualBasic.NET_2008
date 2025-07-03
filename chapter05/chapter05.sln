@@ -13,6 +13,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InheritanceAndPolymorphism"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccessorsAndMutators", "AccessorsAndMutators\AccessorsAndMutators.vbproj", "{2A48A057-AE47-4661-A349-62EFB8E13F14}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EncapsulationUsingProperties", "EncapsulationUsingProperties\EncapsulationUsingProperties.vbproj", "{3266BDD8-C390-488D-A935-602F1B1ADA98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2A48A057-AE47-4661-A349-62EFB8E13F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A48A057-AE47-4661-A349-62EFB8E13F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A48A057-AE47-4661-A349-62EFB8E13F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
