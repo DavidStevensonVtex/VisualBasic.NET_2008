@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SimpleClassExample", "SimpleClassExample\SimpleClassExample.vbproj", "{182CA349-F7AF-4C62-9BA1-26117E51CB1D}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SharedMethods", "SharedMethods\SharedMethods.vbproj", "{60C34BDC-B389-4131-8403-C23A12FC1856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{182CA349-F7AF-4C62-9BA1-26117E51CB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{182CA349-F7AF-4C62-9BA1-26117E51CB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{182CA349-F7AF-4C62-9BA1-26117E51CB1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C34BDC-B389-4131-8403-C23A12FC1856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C34BDC-B389-4131-8403-C23A12FC1856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C34BDC-B389-4131-8403-C23A12FC1856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C34BDC-B389-4131-8403-C23A12FC1856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
