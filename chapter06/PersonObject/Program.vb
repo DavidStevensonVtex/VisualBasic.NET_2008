@@ -2,6 +2,14 @@
 Module Program
 
     Sub Main()
+        ' Shared members of System.Object
+        Dim p3 As New Person("Sally", "Jones", 4)
+        Dim p4 As New Person("Sally", "Jones", 4)
+        Console.WriteLine($"P3 and P4 hae the same state: {Object.Equals(p3, p4)}")
+        Console.WriteLine($"P3 and P4 are pointing to the same object: {Object.ReferenceEquals(p3, p4)}")
+    End Sub
+
+    Sub Main2()
         Console.WriteLine("***** Fun with System.Object *****")
         Dim p1 As New Person("Homer", "Simpson", 50)
         Dim p2 As New Person("Homer", "Simpson", 50)
