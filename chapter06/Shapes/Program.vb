@@ -13,6 +13,12 @@
         For Each s As Shape In myShapes
             s.Draw()
         Next
+        Console.WriteLine()
+
+        ' Fun with shadowing.
+        Dim o As New ThreeDCircle()
+        o.Draw()
+        CType(o, Circle).Draw()
 
     End Sub
 
