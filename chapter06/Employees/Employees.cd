@@ -17,8 +17,8 @@
       <FileName>Employee.Internal.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Employees.SalesPerson" Collapsed="true">
-    <Position X="8" Y="6.25" Width="2" />
+  <Class Name="Employees.SalesPerson">
+    <Position X="8" Y="4" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAgCAAAAAAAAAAAQA=</HashCode>
       <FileName>SalesPerson.vb</FileName>
@@ -29,6 +29,13 @@
     <TypeIdentifier>
       <HashCode>AAAABAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Manager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Employees.PTSalesPerson" Collapsed="true">
+    <Position X="8.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PTSalesPerson.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

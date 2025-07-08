@@ -88,6 +88,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PTSalesPerson.vb" />
     <Compile Include="SalesPerson.vb" />
   </ItemGroup>
   <ItemGroup>
