@@ -19,4 +19,22 @@ Public Class Person
         Return myState
     End Function
 
+    'Public Overrides Function Equals(obj As Object) As Boolean
+    '    If TypeOf obj Is Person AndAlso IsNot Nothing Then
+    '        Dim temp As Person = CType(obj, Person)
+    '        If temp.fName = Me.fName AndAlso
+    '                temp.lName = Me.fName AndAlso
+    '                temp.personAge = Me.personAge Then
+    '            Return True
+    '        Else
+    '            Return False
+    '        End If
+    '    End If
+    '    Return False
+    'End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        Return obj.ToString() = Me.ToString()
+    End Function
+
 End Class
