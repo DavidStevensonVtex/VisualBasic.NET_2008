@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SimpleClassExample", "SimpleClassExample\SimpleClassExample.vbproj", "{182CA349-F7AF-4C62-9BA1-26117E51CB1D}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccessorsAndMutators", "AccessorsAndMutators\AccessorsAndMutators.vbproj", "{2A48A057-AE47-4661-A349-62EFB8E13F14}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EncapsulationUsingProperties", "EncapsulationUsingProperties\EncapsulationUsingProperties.vbproj", "{3266BDD8-C390-488D-A935-602F1B1ADA98}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DocumentingSourceCode", "DocumentingSourceCode\DocumentingSourceCode.vbproj", "{B694E8D7-9D50-4465-BC40-1C176175DC7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3266BDD8-C390-488D-A935-602F1B1ADA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B694E8D7-9D50-4465-BC40-1C176175DC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B694E8D7-9D50-4465-BC40-1C176175DC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B694E8D7-9D50-4465-BC40-1C176175DC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B694E8D7-9D50-4465-BC40-1C176175DC7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
