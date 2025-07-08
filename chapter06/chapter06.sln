@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BasicInheritance", "BasicInheritance\BasicInheritance.vbproj", "{A51FD84A-92FF-4579-8DCF-A813EC46F2DB}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Employees", "Employees\Employees.vbproj", "{45333CF5-F488-4B32-905E-3856E5537AB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A51FD84A-92FF-4579-8DCF-A813EC46F2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A51FD84A-92FF-4579-8DCF-A813EC46F2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A51FD84A-92FF-4579-8DCF-A813EC46F2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45333CF5-F488-4B32-905E-3856E5537AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45333CF5-F488-4B32-905E-3856E5537AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45333CF5-F488-4B32-905E-3856E5537AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45333CF5-F488-4B32-905E-3856E5537AB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
