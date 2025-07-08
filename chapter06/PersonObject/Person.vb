@@ -37,4 +37,10 @@ Public Class Person
         Return obj.ToString() = Me.ToString()
     End Function
 
+    ' Return a hash code based on the person's ToString() value.
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.ToString().GetHashCode()
+    End Function
+
+
 End Class
