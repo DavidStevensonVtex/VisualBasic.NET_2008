@@ -11,6 +11,8 @@
             For i As Integer = 0 To 10
                 myCar.Accelerate(10)
             Next
+        Catch ex As ArgumentOutOfRangeException
+            ' Process bad arguments
         Catch ex As CarIsDeadException
             Console.WriteLine("*** Error! ***")
             Console.WriteLine($"Member name: {ex.TargetSite}")
@@ -27,6 +29,8 @@
                     Console.WriteLine($"-> {de.Key} : {de.Value}")
                 Next
             End If
+        Catch ex As Exception
+            ' Try to catch all other exceptiones here.
         End Try
 
         Console.WriteLine("**** Out of exception logic *****")
