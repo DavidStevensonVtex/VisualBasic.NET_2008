@@ -30,9 +30,9 @@
         Else
             currSpeed += delta
             If currSpeed > maxSpeed Then
-                Console.WriteLine($"{petName} has overheated!")
                 currSpeed = 0
                 carIsDead = True
+                Throw New Exception($"{petName} has overheated!")
             Else
                 Console.WriteLine($"=> CurrSpeed = {currSpeed}")
             End If
