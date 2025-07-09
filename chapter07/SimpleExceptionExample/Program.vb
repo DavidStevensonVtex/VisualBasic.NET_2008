@@ -13,7 +13,8 @@
             Next
         Catch ex As Exception
             Console.WriteLine("*** Error! ***")
-            Console.WriteLine($"Method: {ex.TargetSite}")
+            Console.WriteLine($"Member name: {ex.TargetSite}")
+            Console.WriteLine($"Class defining member: {ex.TargetSite.DeclaringType}")
             Console.WriteLine($"Message: {ex.Message}")
             Console.WriteLine($"Source: {ex.Source}")
         End Try
