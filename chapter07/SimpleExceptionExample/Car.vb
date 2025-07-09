@@ -32,7 +32,11 @@
             If currSpeed > maxSpeed Then
                 currSpeed = 0
                 carIsDead = True
-                Throw New Exception($"{petName} has overheated!")
+                ' We need to call the HelpLink property, thus we need to 
+                ' create a local variable before throwing the Exception
+                Dim ex As New Exception($"{petName} has overheated!")
+                ex.HelpLink = "http://www.CarsRUs.com"
+                Throw ex
             Else
                 Console.WriteLine($"=> CurrSpeed = {currSpeed}")
             End If

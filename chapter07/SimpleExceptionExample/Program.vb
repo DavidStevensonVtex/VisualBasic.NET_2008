@@ -18,6 +18,7 @@
             Console.WriteLine($"Message: {ex.Message}")
             Console.WriteLine($"Source: {ex.Source}")
             Console.WriteLine($"Stack: {ex.StackTrace}")
+            Console.WriteLine($"Help Link: {ex.HelpLink}")
         End Try
 
         Console.WriteLine("**** Out of exception logic *****")
