@@ -11,7 +11,7 @@
             For i As Integer = 0 To 10
                 myCar.Accelerate(10)
             Next
-        Catch ex As Exception
+        Catch ex As CarIsDeadException
             Console.WriteLine("*** Error! ***")
             Console.WriteLine($"Member name: {ex.TargetSite}")
             Console.WriteLine($"Class defining member: {ex.TargetSite.DeclaringType}")

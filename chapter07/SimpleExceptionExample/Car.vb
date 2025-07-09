@@ -34,7 +34,7 @@
                 carIsDead = True
                 ' We need to call the HelpLink property, thus we need to 
                 ' create a local variable before throwing the Exception
-                Dim ex As New Exception($"{petName} has overheated!")
+                Dim ex As New CarIsDeadException($"{petName} has overheated!")
                 ex.HelpLink = "http://www.CarsRUs.com"
 
                 ' Stuff in custom data regarding the error.
