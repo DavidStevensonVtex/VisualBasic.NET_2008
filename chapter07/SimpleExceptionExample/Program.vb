@@ -19,6 +19,14 @@
             Console.WriteLine($"Source: {ex.Source}")
             Console.WriteLine($"Stack: {ex.StackTrace}")
             Console.WriteLine($"Help Link: {ex.HelpLink}")
+
+            ' By default the data field is empty, so check for Nothing.
+            Console.WriteLine("-> Custom Data")
+            If (ex.Data IsNot Nothing) Then
+                For Each de As DictionaryEntry In ex.Data
+                    Console.WriteLine($"-> {de.Key} : {de.Value}")
+                Next
+            End If
         End Try
 
         Console.WriteLine("**** Out of exception logic *****")

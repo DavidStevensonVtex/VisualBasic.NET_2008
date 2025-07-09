@@ -36,6 +36,10 @@
                 ' create a local variable before throwing the Exception
                 Dim ex As New Exception($"{petName} has overheated!")
                 ex.HelpLink = "http://www.CarsRUs.com"
+
+                ' Stuff in custom data regarding the error.
+                ex.Data.Add("TimeStamp", $"The car exploded at {DateTime.Now}")
+                ex.Data.Add("Cause", "You have a lead foot.")
                 Throw ex
             Else
                 Console.WriteLine($"=> CurrSpeed = {currSpeed}")
