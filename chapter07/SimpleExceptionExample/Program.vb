@@ -17,6 +17,7 @@
             Console.WriteLine($"Class defining member: {ex.TargetSite.DeclaringType}")
             Console.WriteLine($"Message: {ex.Message}")
             Console.WriteLine($"Source: {ex.Source}")
+            Console.WriteLine($"Stack: {ex.StackTrace}")
         End Try
 
         Console.WriteLine("**** Out of exception logic *****")
