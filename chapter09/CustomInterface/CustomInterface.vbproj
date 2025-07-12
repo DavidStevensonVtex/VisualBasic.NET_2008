@@ -69,6 +69,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circle.vb" />
     <Compile Include="Hexagon.vb" />
     <Compile Include="IPointy.vb" />
     <Compile Include="Program.vb" />
