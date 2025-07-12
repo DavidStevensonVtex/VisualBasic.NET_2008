@@ -1,4 +1,8 @@
 ﻿Module Program
+    Sub DrawIn3D(ByVal itf3d As IDraw3D)
+        Console.WriteLine("-> Drawing IDraw3D compatible type")
+        itf3d.Draw3D()
+    End Sub
 
     Sub Main()
         Console.WriteLine("***** Fun with Interfaces *****")
@@ -30,6 +34,11 @@
                 Console.WriteLine($"{s.PetName} has {itfPointy.Points} points.")
             Else
                 Console.WriteLine($"{s} does not implement IPointy !")
+            End If
+
+            ' Is this item IDraw3D aware?
+            If TypeOf s Is IDraw3D Then
+                DrawIn3D(CType(s, IDraw3D))
             End If
         Next
     End Sub
