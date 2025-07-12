@@ -15,6 +15,9 @@
             Console.WriteLine($"{c} does not implement IPointy!")
         End Try
 
+        ' See which objects support IPointy.
+        Console.WriteLine($"Circle implements IPointy? {TypeOf c Is IPointy}")
+        Console.WriteLine($"Hexagon implements IPointy?: {TypeOf hex Is IPointy}")
     End Sub
 
 End Module
