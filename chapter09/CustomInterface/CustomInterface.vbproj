@@ -89,6 +89,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Shape.vb" />
+    <Compile Include="ThreeDCircle.vb" />
     <Compile Include="Triangle.vb" />
   </ItemGroup>
   <ItemGroup>
