@@ -41,6 +41,12 @@
                 DrawIn3D(CType(s, IDraw3D))
             End If
         Next
+
+        ' This array can only contain objects that implement the IPointy interface.
+        Dim pointyThings() As IPointy = {New Hexagon(), New Knife(), New Triangle(), New Fork(), New PitchFork()}
+        For Each p As IPointy In pointyThings
+            Console.WriteLine($"Object has {p.Points} points.")
+        Next
     End Sub
 
 End Module
