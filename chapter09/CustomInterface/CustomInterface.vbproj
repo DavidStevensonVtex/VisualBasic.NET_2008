@@ -73,8 +73,10 @@
     <Compile Include="Fork.vb" />
     <Compile Include="Hexagon.vb" />
     <Compile Include="IDraw3D.vb" />
+    <Compile Include="IDrawToForm.vb" />
     <Compile Include="IPointy.vb" />
     <Compile Include="Knife.vb" />
+    <Compile Include="Octagon.vb" />
     <Compile Include="PitchFork.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

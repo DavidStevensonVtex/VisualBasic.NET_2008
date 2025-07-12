@@ -1,10 +1,29 @@
 ﻿Module Program
+    Sub Main()
+        Console.WriteLine("***** Fun with Interface Name Clashes *****")
+        Dim o As New Octagon()
+        ' Call IDrawToMemory.Draw()
+        Dim iMem As IDrawToMemory
+        iMem = CType(o, IDrawToMemory)
+        iMem.Draw()
+
+        ' Call IDrawToPrinter.Draw
+        Dim iPrint As IDrawToPrinter
+        iPrint = CType(o, IDrawToPrinter)
+        iPrint.Draw()
+
+        ' Call IDrawToForm.Draw
+        Dim iForm As IDrawToForm
+        iForm = CType(o, IDrawToForm)
+        iForm.Draw()
+
+    End Sub
     Sub DrawIn3D(ByVal itf3d As IDraw3D)
         Console.WriteLine("-> Drawing IDraw3D compatible type")
         itf3d.Draw3D()
     End Sub
 
-    Sub Main()
+    Sub OldMain()
         Console.WriteLine("***** Fun with Interfaces *****")
         Dim hex As New Hexagon()
         Console.WriteLine($"Number of Point: {hex.Points}")
