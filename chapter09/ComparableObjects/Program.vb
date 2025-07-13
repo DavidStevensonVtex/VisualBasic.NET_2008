@@ -25,6 +25,14 @@
         For Each c As Car In myAutos
             Console.WriteLine($"Car {c.ID} is named {c.Name}.")
         Next
+        Console.WriteLine()
+
+        Array.Sort(myAutos, New PetNameComparer())
+        ' Print the name and ID of each car.
+        Console.WriteLine("-> Ordering by pet name")
+        For Each c As Car In myAutos
+            Console.WriteLine($"Car {c.ID} is named {c.Name}.")
+        Next
 
 
     End Sub
