@@ -1,5 +1,17 @@
-﻿Public Class Car
+﻿' We now support a custom property to return the correct IComparer interface.
+Public Class Car
     Implements IComparable
+
+    ' This helper class is used to sort an array of Cars by pet name.
+    Private Class PetNameComparer
+        Implements IComparer
+
+        Public Function Compare(x As Object, y As Object) As Integer Implements IComparer.Compare
+            Dim c1 As Car = CType(x, Car)
+            Dim c2 As Car = CType(y, Car)
+            Return String.Compare(c1.Name, c2.Name)
+        End Function
+    End Class
 
     Public Property Name As String
     Public Property Speed As Integer
@@ -27,4 +39,13 @@
             Return 0
         End If
     End Function
+
+    ' Assume PetNameCcomparer has been nested within the Car Type.
+
+    ' Property to return the pet name comparer.
+    Public Shared ReadOnly Property SortByPetName() As IComparer
+        Get
+            Return New PetNameComparer()
+        End Get
+    End Property
 End Class

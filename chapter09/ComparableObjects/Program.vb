@@ -27,7 +27,7 @@
         Next
         Console.WriteLine()
 
-        Array.Sort(myAutos, New PetNameComparer())
+        Array.Sort(myAutos, Car.SortByPetName())
         ' Print the name and ID of each car.
         Console.WriteLine("-> Ordering by pet name")
         For Each c As Car In myAutos
